@@ -1,0 +1,124 @@
+---
+import BackButton from '../components/BackButton.astro';
+---
+
+
+
+<html>
+  <head>
+    <title>About Me - Daniel Ek</title>
+    <meta charset="UTF-8">
+    <style>
+      .fade-in {
+        animation: fadeIn ease 3s;
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto py-12 px-6">
+      <BackButton />      
+      <!-- Hero Section -->
+      <div class="text-center mb-12 fade-in">
+        <img src="/public/images/portfolio_image.jpg" alt="Daniel Ek" class="rounded-full w-66 h-60 mx-auto shadow-xl hover:scale-105 transition duration-300">
+        <h1 class="text-5xl font-extrabold mt-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-green-500 animate-pulse">Hi, I'm Daniel Ek</h1>
+        <p class="mt-4 text-lg text-gray-600">I'm a passionate web developer who loves building modern and user-centric websites.</p>
+      </div>
+
+      <!-- Skills Section with Icons -->
+      <div class="mt-12 bg-white p-8 shadow-lg rounded-lg">
+        <h2 class="text-4xl font-bold mb-6 text-center">Key Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Frontend Skills -->
+          <div class="bg-teal-50 p-4 rounded-lg text-center shadow">
+            <h3 class="text-2xl font-semibold">Frontend Development</h3>
+            <ul class="mt-4 text-lg">
+              <li>HTML, CSS, JavaScript</li>
+              <li>React.js, Next.js</li>
+              <li>Astro</li>
+              <li>Tailwind CSS</li>
+              <li>Vue.js</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <!-- Backend Skills -->
+          <div class="bg-teal-50 p-4 rounded-lg text-center shadow">
+            <h3 class="text-2xl font-semibold">Backend Development</h3>
+            <ul class="mt-4 text-lg">
+              <li>Node.js, Express</li>
+              <li>PHP, MySQL</li>
+              <li>Laravel</li>
+              <li>API Integration</li>
+              <li>Supabase</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+          <!-- Tools & Version Control -->
+          <div class="bg-teal-50 p-4 rounded-lg text-center shadow">
+            <h3 class="text-2xl font-semibold">Tools & Version Control</h3>
+            <ul class="mt-4 text-lg">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Webpack, NPM</li>
+              <li>Docker</li>
+              <li>CI/CD Pipelines</li>
+            </ul>
+          </div>
+          <!-- Other Skills -->
+          <div class="bg-teal-50 p-4 rounded-lg text-center shadow">
+            <h3 class="text-2xl font-semibold">Other Skills</h3>
+            <ul class="mt-4 text-lg">
+              <li>Responsive Design</li>
+              <li>Problem Solving</li>
+              <li>Team Collaboration</li>
+              <li>Agile Methodologies</li>
+              <li>Communication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- References Section -->
+      <div class="mt-12 bg-white p-8 shadow-lg rounded-lg">
+        <h2 class="text-4xl font-bold mb-6 text-center">References</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+            <p class="italic">"Daniel is an incredibly talented developer. His attention to detail and problem-solving skills are unmatched!"</p>
+            <span class="block mt-4 text-lg font-semibold">- Client A</span>
+            <p class="mt-2 text-gray-600">Phone: <a href="tel:+1234567890" class="text-blue-500">+123 456 7890</a></p>
+            <p class="text-gray-600">Email: <a href="mailto:clientA@example.com" class="text-blue-500">clientA@example.com</a></p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow text-center">
+            <p class="italic">"Working with Daniel was a pleasure. He consistently delivered high-quality work and met tight deadlines."</p>
+            <span class="block mt-4 text-lg font-semibold">- Client B</span>
+            <p class="mt-2 text-gray-600">Phone: <a href="tel:+0987654321" class="text-blue-500">+098 765 4321</a></p>
+            <p class="text-gray-600">Email: <a href="mailto:clientB@example.com" class="text-blue-500">clientB@example.com</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Personal Section -->
+      <div class="mt-12 bg-white p-8 shadow-lg rounded-lg">
+        <h2 class="text-4xl font-bold mb-6 text-center">Who is Daniel?</h2>
+        <p class="text-lg text-gray-600 mb-4">
+          Outside of coding, I'm passionate about sports, such as fotball and handball. These activities help me stay creative and inspired, which I bring into my work.
+        </p>
+        <p class="text-lg text-gray-600 mb-4">
+          I’m also a lifelong learner, always expanding my knowledge on new technologies and frameworks. I enjoy solving complex problems and continuously improving both my personal and professional skills.
+        </p>
+        <p class="text-lg text-gray-600 mb-4">
+          Feel free to reach out if you'd like to collaborate on exciting projects or simply connect!
+        </p>
+      </div>
+      
+      <!-- Call to Action Section -->
+      <div class="text-center mt-12">
+        <a href="/projects" class="btn bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">View My Projects</a>
+        <a href="/contact" class="btn bg-green-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition duration-300 ml-4">Contact Me</a>
+      </div>
+    </div>
+  </body>
+</html>
