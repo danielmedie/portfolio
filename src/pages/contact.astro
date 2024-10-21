@@ -1,14 +1,11 @@
 ---
 import BackButton from "../components/BackButton.astro";
-// import Swal from 'sweetalert2';
-
 ---
 
 <html>
   <head>
     <title>Contact - Daniel Ek</title>
     <meta charset="UTF-8">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
       (function() {
@@ -16,7 +13,7 @@ import BackButton from "../components/BackButton.astro";
       })();
     </script>
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-teal-50">
     <BackButton />      
     <div class="container mx-auto py-12">
       <div class="text-center mb-8">
@@ -27,18 +24,20 @@ import BackButton from "../components/BackButton.astro";
       <div class="bg-white p-8 shadow-lg rounded-lg max-w-lg mx-auto">
         <form id="contactForm" class="space-y-6">
           <div>
-            <label for="name" class="block text-lg font-semibold text-gray-700">Name</label>
-            <input id="name" type="text" class="mt-2 p-3 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required/>
+            <label for="from_name" class="block text-lg font-semibold text-gray-700">Name</label>
+            <input id="from_name" name="from_name" type="text" class="mt-2 p-3 block w-full border border-gray-300 rounded-md" required />
           </div>
           <div>
             <label for="email" class="block text-lg font-semibold text-gray-700">Email</label>
-            <input id="email" type="email" class="mt-2 p-3 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required/>
+            <input id="email" name="email" type="email" class="mt-2 p-3 block w-full border border-gray-300 rounded-md" required />
           </div>
           <div>
             <label for="message" class="block text-lg font-semibold text-gray-700">Message</label>
-            <textarea id="message" rows="5" class="mt-2 p-3 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required></textarea>
+            <textarea id="message" name="message" rows="5" class="mt-2 p-3 block w-full border border-gray-300 rounded-md" required></textarea>
           </div>
-          <button type="submit" class="w-full py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Send</button>
+          <button type="submit" class="w-full py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-lg hover:bg-indigo-700">
+            Send
+          </button>
         </form>
       </div>
     </div>

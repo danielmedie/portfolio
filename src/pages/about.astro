@@ -8,6 +8,8 @@ import BackButton from '../components/BackButton.astro';
   <head>
     <title>About Me - Daniel Ek</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
       .fade-in {
         animation: fadeIn ease 3s;
@@ -18,7 +20,7 @@ import BackButton from '../components/BackButton.astro';
       }
     </style>
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-teal-50">
     <div class="container mx-auto py-12 px-6">
       <BackButton />      
       <!-- Hero Section -->
@@ -27,6 +29,18 @@ import BackButton from '../components/BackButton.astro';
         <h1 class="text-5xl font-extrabold mt-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-green-500 animate-pulse">Hi, I'm Daniel Ek</h1>
         <p class="mt-4 text-lg text-gray-600">I'm a passionate web developer who loves building modern and user-centric websites.</p>
       </div>
+      <div class="flex space-x-6 justify-center">
+        <!-- GitHub Link -->
+        <a href="https://github.com/danielmedie" target="_blank" class="text-gray-600 hover:text-black">
+          <i class="fab fa-github text-3xl"></i>
+        </a>
+        
+        <!-- LinkedIn Link -->
+        <a href="https://linkedin.com/in/daniel-ek-5a753a260" target="_blank" class="text-gray-600 hover:text-blue-500">
+          <i class="fab fa-linkedin text-3xl"></i>
+        </a>
+      </div>
+      
 
       <!-- Skills Section with Icons -->
       <div class="mt-12 bg-white p-8 shadow-lg rounded-lg">
@@ -63,8 +77,7 @@ import BackButton from '../components/BackButton.astro';
               <li>Git & GitHub</li>
               <li>VS Code</li>
               <li>Webpack, NPM</li>
-              <li>Docker</li>
-              <li>CI/CD Pipelines</li>
+
             </ul>
           </div>
           <!-- Other Skills -->
